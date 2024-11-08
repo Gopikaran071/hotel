@@ -1,0 +1,212 @@
+/*
+ * Base structure
+ */
+/*
+ * Global Structure
+ */
+body {
+	background: #f5f5f5;
+}
+
+img {
+	max-width: 100%;
+}
+
+.wow-docs-nav {
+	margin-bottom: 0;
+	background-color: #FFF;
+	border-bottom: 0;
+}
+
+.wow-docs-nav .navbar-brand,
+.wow-docs-nav .navbar-brand:hover,
+.wow-docs-nav .navbar-nav>li>a,
+.wow-docs-nav .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-brand:focus,
+.navbar-inverse .navbar-brand:hover {
+  font-weight: 500;
+  color: #563D7C;
+}
+
+.wow-docs-header {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	font-size: 24px;
+	text-align: left;
+	position: relative;
+	padding: 30px 0;
+	color: #CDBFE3;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+	background-color: #6F5499;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#563D7C),to(#6F5499));
+	background-image: -webkit-linear-gradient(top,#563D7C 0,#6F5499 100%);
+	background-image: -o-linear-gradient(top,#563d7c 0,#6f5499 100%);
+	background-image: linear-gradient(to bottom,#563D7C 0,#6F5499 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#563d7c', endColorstr='#6F5499', GradientType=0);
+	background-repeat: repeat-x;
+}
+
+.wow-docs-header h1, .wow-docs-header p {
+	margin-right: 380px;
+}
+
+.wow-docs-header h1 {
+	font-size: 48px;
+	line-height: 1;
+	color: #fff;
+}
+
+.wow-docs-header p {
+	font-weight: 300;
+	line-height: 1.4;
+}
+
+.wow-docs-header small.block {
+	font-size: 14px;
+	display: block;
+}
+
+.wow-docs-header a {
+	color: #fff;
+}
+
+.wow-docs-section {
+	margin-bottom: 60px;
+}
+
+.wow-docs-img {
+	margin-bottom: 20px;
+	background: #F5F5F5;
+	padding: 5px;
+	border: 1px solid #CCC;
+}
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.zero-bottom {
+	margin-bottom: 0;
+}
+
+.wow-docs-footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #fff;
+  color: #767676;
+  border-top: 1px solid #E5E5E5;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+	height: 100%;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+
+  .sidebar .affix{
+	  top: 0;
+	  width: 100%;
+	  max-width: 195px;
+  }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+	margin-right: -21px; /* 20px padding + 1px border */
+	margin-bottom: 20px;
+	margin-left: -20px;
+}
+.nav-sidebar > li > a {
+	padding: 8px 20px;
+	color: #777;
+}
+
+.nav-sidebar > li > a:hover {
+	background: none;
+	color: #6F5499;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+	background: none;
+}
+
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+	color: #6F5499;
+	border-left: 5px solid #6F5499;
+	background: none;
+}
+
+.nav-sidebar > li > ul > li {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.nav-sidebar > li > ul > li > a{
+	color: #777;
+	font-size: 90%;
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+  background: #fff;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
